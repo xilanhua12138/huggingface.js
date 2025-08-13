@@ -1216,6 +1216,14 @@ export const MODEL_LIBRARIES_UI_ELEMENTS = {
 		countDownloads: `path:"model_vae_fp16.pt"`,
 		snippets: snippets.threedtopia_xl,
 	},
+	hpsv3: {
+		prettyLabel: "hpsv3",
+		repoName: "HPSv3",
+		repoUrl: "https://github.com/MizzenAI/HPSv3",
+		docsUrl: "https://github.com/MizzenAI/HPSv3",
+		countDownloads: `path_extension:"pt" OR path_extension:"safetensors"`,
+		snippets: snippets.hpsv3,
+	},
 } satisfies Record<string, LibraryUiElement>;
 
 export type ModelLibraryKey = keyof typeof MODEL_LIBRARIES_UI_ELEMENTS;
